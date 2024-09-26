@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+   background-image: url(../img/blackcover.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.header-section{
+    display: flex;
+    align-items: center;
+    /* background-color: white; */
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 22px;
+    box-shadow: 1px 1px 2px rgb(177, 174, 174);
+    cursor: pointer;
+
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   padding: 10px ;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+
+nav ul li{
+    padding: 7px 30px;
+    transition: 0.9s;
+    color: white;
+    
+}
+nav ul li:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(46, 164, 228);
+    border: 10px;
+    border-radius: 10px;
+    font-weight: 55px;
+}
+}
+
+
+button {
+    width: 90px;
+    padding: 0px;
+    margin: 10px;
+    margin-bottom: -30px;
+    background-color:  rgb(241, 208, 60);
+    color: rgb(25, 22, 22);
+    font-size: 70px;
+    border: 0;
+    border-radius: 7px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button:hover {
+    background-color:black;
+    color: white;
+}
+
+
+/* main-section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    /* background-color: darkblue; */
+}
+.image-main  img{
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 22px 1px  white;
+}
+.content {
+    width: 800px;
+    font-size: 22px;
+    color: rgb(254, 254, 254);
+}
+.content h1{
+    font-size:55px;
+    text-shadow: 8px 2px 8px rgb(129, 208, 240);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.content p{
+    width: 600px;
+    font-style: inherit;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transform: translateY(20px);
+}
+
+button{
+    margin-top: 40px;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+.get{
+    background-color: rgb(202, 51, 172);
+}
+.get:hover{
+    border: 4px solid white;
+    background-color: rgb(9, 9, 63);
+    color: white;
+}
+.read:hover{
+    background-color:rgb(78, 191, 165);
+}
+
+@media (max-width:767px){
+    .main{
+          display: flex;
+          flex-direction: column-reverse;
+    }
+    .image-main img{
+          width: 350px;
+    }
+    .image-main{
+          justify-content: center;
+          margin: auto;
+          text-align: center;
+    }
+    .content{
+          width: 350px;
+    }
+    .content p{
+          width: 440px;
+    }
+    .content h1{
+          width: 400px;
+          font-size: 44px;
+    }
+    button{
+          width: 125%;
+    }
+}
+
+
+/* teachers  */
+
+.teachers{
+    /* background-color: whitesmoke; */
+    padding: 40px;
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    
+}
+.card{
+    background-color: rgb(237, 236, 236);
+    width: 300px;
+    padding: 20px;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.card:hover{
+    background-color: darkblue;
+    color: white;
+    scale: 1.02;
+    transition: all 0.9s;
+    cursor: pointer;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.teachers h3{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 900;
+    text-decoration: underline
+}
+
+
+/* courses */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.ourcourses {
+    /* background-color: whitesmoke; */
+    padding: 40px;   
+}
+
+.course img{
+    width: 310px;
+    height: 150px;
+    border-radius: 0px;
+    align-items: center;
+    
+}
+.course{
+    background-color: rgb(146, 237, 215);
+    width: 350px;
+    height: 470px;
+    padding: 20px;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 5px rgb(70, 126, 130);
+}
+.course:hover{
+    background-image: url(../img/blue.png);
+    color: white;
+    scale: 1.02;
+    transition: all 0.9s;
+    cursor: pointer;
+}
+
+.courses{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.course h1 {
+    margin-top: 15px;
+    text-shadow: 1px 2px 2px 8px wheat;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.course p {
+    margin-top: 10px;
+   font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* testimonial */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.testmonia{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+}
+.testmonia p{
+    width: 700px;
+    margin-top: 20px;
+    margin: auto;
+    justify-content: center;
+    color: white;
+}
+.image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+/* footer section */
+
+footer {
+    background-color: #e8ddbd;
+    color: rgb(0, 0, 0);
+    padding: 5px 0;
+    text-align: center;
+    margin-top: 80px;
+    
+    justify-content: first baseline;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+   
+}
+
+.social-icons {
+    margin-bottom: 20px;
+    
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+   
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 16px;
+}
